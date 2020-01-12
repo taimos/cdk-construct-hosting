@@ -1,0 +1,19 @@
+---
+name: Build CDK packages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+
+      - name: Publish packages
+        uses: udondan/jsii-publish@v0.6.4
+        with:
+          BUILD_SOURCE: true
+          BUILD_PACKAGES: true
+          GITHUB_REPOSITORY: ${{ github.repository }}
