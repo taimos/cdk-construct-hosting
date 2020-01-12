@@ -1,33 +1,25 @@
-# A CDK L3 Construct for a Secure Bucket
+[![npm version](https://badge.fury.io/js/@taimos/cdk-construct-hosting.svg)](https://badge.fury.io/js/@taimos/cdk-construct-hosting)
+[![PyPI version](https://badge.fury.io/py/taimos.cdk-construct-hosting.svg)](https://badge.fury.io/py/taimos.cdk-construct-hosting)
 
-This is an AWS CDK L3 Construct used to demonstrate the development and publishing process with the AWS CDK.
+# A CDK L3 Construct for web hosting
 
-Please refer to the blog post [here](https://www.matthewbonig.com/2020/01/11/creating-constructs) for more information.
+## Installation
 
+You can install the library into your project using npm or pip.
 
-## Usage
+```bash
+npm install @taimos/cdk-construct-hosting
 
-Just import and use it.
-
-```typescript
-import cdk = require('@aws-cdk/core');
-import {SecureBucket} from 'secure-bucket';
-
-export class SandboxCdkStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
-    super(scope, id, props);
-
-    new SecureBucket(this, 'myBucket',{});
-  }
-}
-
+pip3 install taimos-cdk
 ```
 
-## Encryption options
-This is just a wrapper around an S3 Bucket and the [props](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-s3.BucketProps.html) are shared.
 
-However, you cannot supply an `UNENCRYPTED` option for the `encryption` property. If you do, or don't set it at all, it will use the `BucketEncryption.KMS_MANAGED` value by default.
+# Contributing
 
-## License
+We welcome community contributions and pull requests. 
 
-[MIT License](https://opensource.org/licenses/MIT) 
+# License
+
+The CDK construct library is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+See [LICENSE](./LICENSE) for more information.
