@@ -6,3 +6,4 @@ dist/
 .jsii
 **/*.js
 **/*.d.ts
+!jest.config.js
