@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Publish packages
+      - name: Build packages
         uses: udondan/jsii-publish@v0.6.4
         with:
           BUILD_SOURCE: true

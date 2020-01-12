@@ -1,5 +1,6 @@
-[![npm version](https://badge.fury.io/js/@taimos/cdk-construct-hosting.svg)](https://badge.fury.io/js/@taimos/cdk-construct-hosting)
+[![npm version](https://badge.fury.io/js/%40taimos%2Fcdk-construct-hosting.svg)](https://badge.fury.io/js/%40taimos%2Fcdk-construct-hosting)
 [![PyPI version](https://badge.fury.io/py/taimos.cdk-construct-hosting.svg)](https://badge.fury.io/py/taimos.cdk-construct-hosting)
+
 
 # A CDK L3 Construct for web hosting
 
@@ -10,7 +11,7 @@ You can install the library into your project using npm or pip.
 ```bash
 npm install @taimos/cdk-construct-hosting
 
-pip3 install taimos-cdk
+pip3 install taimos.cdk-construct-hosting
 ```
 
 
