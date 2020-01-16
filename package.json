@@ -11,7 +11,9 @@
     "doc": "typedoc --excludeExternals --mode file --out doc lib/",
     "build": "npm-run-all clean build:jsii test",
     "build:jsii": "jsii",
-    "package": "npm-run-all build doc && jsii-pacmak"
+    "package": "npm-run-all build doc && jsii-pacmak",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -p angular",
+    "version": "npm run changelog && git add CHANGELOG.md"
   },
   "jsii": {
     "outdir": "dist",
@@ -40,8 +42,8 @@
     "name": "Thorsten Hoeger",
     "url": "https://www.taimos.de"
   },
-  "awscdkio": { 
-    "twitter": "hoegertn" 
+  "awscdkio": {
+    "twitter": "hoegertn"
   },
   "license": "Apache-2.0",
   "repository": {
@@ -64,13 +66,13 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
-    "@aws-cdk/core": "1.20.0",
     "@aws-cdk/aws-certificatemanager": "1.20.0",
     "@aws-cdk/aws-cloudfront": "1.20.0",
     "@aws-cdk/aws-route53": "1.20.0",
     "@aws-cdk/aws-route53-targets": "1.20.0",
     "@aws-cdk/aws-s3": "1.20.0",
-    "@aws-cdk/aws-s3-deployment": "1.20.0"
+    "@aws-cdk/aws-s3-deployment": "1.20.0",
+    "@aws-cdk/core": "1.20.0"
   },
   "peerDependencies": {
     "@aws-cdk/core": "1.20.0",
