@@ -21,13 +21,6 @@
       "python": {
         "distName": "taimos.cdk-construct-hosting",
         "module": "taimos.cdk_construct_hosting"
-      },
-      "java": {
-        "package": "de.taimos.cdk.construct.hosting",
-        "maven": {
-          "groupId": "de.taimos.cdk.construct",
-          "artifactId": "hosting"
-        }
       }
     }
   },
@@ -51,7 +44,7 @@
     "url": "https://github.com/taimos/cdk-construct-hosting"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.20.0",
+    "@aws-cdk/assert": "1.21.0",
     "@types/jest": "^24.9.0",
     "@types/node": "^13.1.7",
     "concurrently": "^5.0.2",
@@ -66,21 +59,21 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
-    "@aws-cdk/aws-certificatemanager": "1.20.0",
-    "@aws-cdk/aws-cloudfront": "1.20.0",
-    "@aws-cdk/aws-route53": "1.20.0",
-    "@aws-cdk/aws-route53-targets": "1.20.0",
-    "@aws-cdk/aws-s3": "1.20.0",
-    "@aws-cdk/aws-s3-deployment": "1.20.0",
-    "@aws-cdk/core": "1.20.0"
+    "@aws-cdk/aws-certificatemanager": "1.21.0",
+    "@aws-cdk/aws-cloudfront": "1.21.0",
+    "@aws-cdk/aws-route53": "1.21.0",
+    "@aws-cdk/aws-route53-targets": "1.21.0",
+    "@aws-cdk/aws-s3": "1.21.0",
+    "@aws-cdk/aws-s3-deployment": "1.21.0",
+    "@aws-cdk/core": "1.21.0"
   },
   "peerDependencies": {
-    "@aws-cdk/core": "1.20.0",
-    "@aws-cdk/aws-certificatemanager": "1.20.0",
-    "@aws-cdk/aws-cloudfront": "1.20.0",
-    "@aws-cdk/aws-route53": "1.20.0",
-    "@aws-cdk/aws-route53-targets": "1.20.0",
-    "@aws-cdk/aws-s3": "1.20.0",
-    "@aws-cdk/aws-s3-deployment": "1.20.0"
+    "@aws-cdk/core": "1.21.0",
+    "@aws-cdk/aws-certificatemanager": "1.21.0",
+    "@aws-cdk/aws-cloudfront": "1.21.0",
+    "@aws-cdk/aws-route53": "1.21.0",
+    "@aws-cdk/aws-route53-targets": "1.21.0",
+    "@aws-cdk/aws-s3": "1.21.0",
+    "@aws-cdk/aws-s3-deployment": "1.21.0"
   }
 }
